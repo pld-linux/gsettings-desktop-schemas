@@ -1,12 +1,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	0.0.1
+Version:	0.1.0
 Release:	1
 License:	GPL v2
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/0.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	6c8986b4b3101c61baadc9795f52ec3a
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/0.1/%{name}-%{version}.tar.bz2
+# Source0-md5:	468faa60c2d82e02113849c1fda47efa
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
@@ -50,8 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%{__mv} -f $RPM_BUILD_ROOT{%{_pkgconfigdir},%{_npkgconfigdir}}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -66,12 +64,17 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog HACKING NEWS README
+%{_datadir}/GConf/gsettings/gsettings-desktop-schemas.convert
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.enums.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.interface.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml
-%{_datadir}/glib-2.0/schemas/org.gnome.desktop.url-handlers.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml
 
 %files devel
