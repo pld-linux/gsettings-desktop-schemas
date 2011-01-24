@@ -10,7 +10,10 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/0.1/%{
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
+BuildRequires:	gettext-devel
+BuildRequires:	glib2-devel
 BuildRequires:	intltool >= 0.40.0
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.592
 Requires(post,postun):	glib2 >= 1:2.26.0
 BuildArch:	noarch
