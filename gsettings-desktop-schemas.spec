@@ -1,12 +1,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	0.1.4
+Version:	0.1.5
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/0.1/%{name}-%{version}.tar.bz2
-# Source0-md5:	8bc112dfaf6d10d444c01f51966c7460
+# Source0-md5:	2057d807143caa2d72454b2c97856988
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
@@ -78,6 +78,7 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.interface.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.media-handling.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.session.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.thumbnailers.gschema.xml
