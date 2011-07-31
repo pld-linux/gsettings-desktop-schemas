@@ -1,12 +1,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	3.0.1
+Version:	3.1.3
 Release:	1
 License:	GPL v2
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	d42f0d79d6449a0eb1bb502eee8eb709
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.1/%{name}-%{version}.tar.bz2
+# Source0-md5:	46b14d7c866d59cac9c55857377372a1
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
@@ -86,6 +86,7 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.thumbnailers.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.system.locale.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml
 
 %files devel
