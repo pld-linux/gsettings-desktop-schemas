@@ -5,8 +5,8 @@ Version:	3.1.3
 Release:	1
 License:	GPL v2
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.1/%{name}-%{version}.tar.bz2
-# Source0-md5:	46b14d7c866d59cac9c55857377372a1
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.1/%{name}-%{version}.tar.xz
+# Source0-md5:	aa6d4910d338a9191c0ed88219dc1d2f
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
