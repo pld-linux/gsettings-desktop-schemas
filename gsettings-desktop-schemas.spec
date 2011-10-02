@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
 Version:	3.2.0
 Release:	1
-License:	GPL v2
+License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.2/%{name}-%{version}.tar.xz
 # Source0-md5:	ca7c625aaa2d6fd2e37c5d08b9debafa
