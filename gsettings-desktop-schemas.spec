@@ -1,24 +1,25 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	3.2.0
+Version:	3.4.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.2/%{name}-%{version}.tar.xz
-# Source0-md5:	ca7c625aaa2d6fd2e37c5d08b9debafa
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.4/%{name}-%{version}.tar.xz
+# Source0-md5:	779e0fd33bb633b532f707458552a0d3
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-devel
-BuildRequires:	glib2-devel
+BuildRequires:	glib2-devel >= 1:2.32.0
+BuildRequires:	gobject-introspection-devel >= 1.31.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.592
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires(post,postun):	glib2 >= 1:2.26.0
-BuildArch:	noarch
+Requires:	glib2 >= 1:2.32.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -72,7 +73,9 @@ fi
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog HACKING NEWS README
+%{_libdir}/girepository-1.0/GDesktopEnums-3.0.typelib
 %{_datadir}/GConf/gsettings/gsettings-desktop-schemas.convert
+%{_datadir}/GConf/gsettings/wm-schemas.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml
@@ -88,10 +91,13 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.thumbnailers.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.wm.keybindings.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.system.locale.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml
 
 %files devel
 %defattr(644,root,root,755)
+%{_datadir}/gir-1.0/GDesktopEnums-3.0.gir
 %{_includedir}/gsettings-desktop-schemas
 %{_npkgconfigdir}/gsettings-desktop-schemas.pc
