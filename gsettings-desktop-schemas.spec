@@ -1,18 +1,18 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	3.4.0
+Version:	3.4.1
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.4/%{name}-%{version}.tar.xz
-# Source0-md5:	779e0fd33bb633b532f707458552a0d3
+# Source0-md5:	909d8814f5eb14050e8a75bc54bdb0a0
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.32.0
-BuildRequires:	gobject-introspection-devel >= 1.31.0
+BuildRequires:	gobject-introspection-devel >= 1.32.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.592
