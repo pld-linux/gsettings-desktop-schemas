@@ -1,12 +1,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	3.5.4
+Version:	3.4.2
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.5/%{name}-%{version}.tar.xz
-# Source0-md5:	02685b0ceb5e6dd938442c09f4ad3030
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.4/%{name}-%{version}.tar.xz
+# Source0-md5:	e670906bb64bbebe83df21546d204509
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
@@ -83,7 +83,6 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.enums.xml
-%{_datadir}/glib-2.0/schemas/org.gnome.desktop.input-sources.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.interface.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.media-handling.gschema.xml
@@ -96,7 +95,6 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.system.locale.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml
-
 
 %files devel
 %defattr(644,root,root,755)
