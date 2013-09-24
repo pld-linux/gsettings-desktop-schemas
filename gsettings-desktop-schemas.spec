@@ -1,12 +1,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	3.8.2
+Version:	3.10.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.8/%{name}-%{version}.tar.xz
-# Source0-md5:	e084260f176b3cdc8d56a5f6af0d2c0d
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.10/%{name}-%{version}.tar.xz
+# Source0-md5:	22ed383ea2b08ec6d9022f3206290e73
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
@@ -77,10 +77,12 @@ fi
 %{_datadir}/GConf/gsettings/gsettings-desktop-schemas.convert
 %{_datadir}/GConf/gsettings/wm-schemas.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.datetime.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.enums.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.input-sources.gschema.xml
