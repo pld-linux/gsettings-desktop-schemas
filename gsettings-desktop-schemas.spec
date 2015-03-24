@@ -1,19 +1,19 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	3.14.1
-Release:	2
+Version:	3.16.0
+Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.14/%{name}-%{version}.tar.xz
-# Source0-md5:	92d41934212fc7da48648afa3927f4b0
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.16/%{name}-%{version}.tar.xz
+# Source0-md5:	f87833627ac29866fb8835c5f4ee3271
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
 BuildRequires:	gobject-introspection-devel >= 1.32.0
-BuildRequires:	intltool >= 0.40.0
+BuildRequires:	intltool >= 0.50.1
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.592
 BuildRequires:	tar >= 1:1.22
@@ -91,6 +91,7 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.media-handling.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.notifications.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.peripherals.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.privacy.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.screensaver.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.search-providers.gschema.xml
