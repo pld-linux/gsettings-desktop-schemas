@@ -1,12 +1,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	3.20.0
+Version:	3.22.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.20/%{name}-%{version}.tar.xz
-# Source0-md5:	c5d87ea480aa9bf66b134ddb5b8ea0f8
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.22/%{name}-%{version}.tar.xz
+# Source0-md5:	5b9056ab6eff42a0117f2912edff5f20
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
@@ -83,6 +83,7 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.app-folders.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.calendar.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.datetime.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.enums.xml
