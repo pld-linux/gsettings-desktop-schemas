@@ -1,21 +1,20 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	3.28.1
+Version:	3.32.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.28/%{name}-%{version}.tar.xz
-# Source0-md5:	83bb19d025f126fae495ab43a2f26f40
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.32/%{name}-%{version}.tar.xz
+# Source0-md5:	0c2d468a482c12594757442c983aa8ea
 URL:		http://www.gnome.org/
-BuildRequires:	autoconf >= 2.53
-BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
 BuildRequires:	gobject-introspection-devel >= 1.32.0
 BuildRequires:	intltool >= 0.50.1
+BuildRequires:	meson >= 0.46.0
 BuildRequires:	pkgconfig
-BuildRequires:	rpmbuild(macros) >= 1.592
+BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires(post,postun):	glib2 >= 1:2.32.0
@@ -43,19 +42,13 @@ Pliki programistyczne dla gsettings-desktop-schemas.
 %setup -q
 
 %build
-%{__intltoolize}
-%{__aclocal} -I m4
-%{__autoconf}
-%{__automake}
-%configure \
-	--disable-silent-rules
-%{__make}
+%meson build
+%ninja_build -C build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+%ninja_install -C build
 
 %find_lang %{name}
 
