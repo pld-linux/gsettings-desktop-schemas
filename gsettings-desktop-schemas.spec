@@ -11,8 +11,8 @@ URL:		http://www.gnome.org/
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
 BuildRequires:	gobject-introspection-devel >= 1.32.0
-BuildRequires:	intltool >= 0.50.1
 BuildRequires:	meson >= 0.46.0
+BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
