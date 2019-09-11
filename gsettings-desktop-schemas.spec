@@ -43,6 +43,7 @@ Pliki programistyczne dla gsettings-desktop-schemas.
 
 %build
 %meson build
+
 %ninja_build -C build
 
 %install
@@ -65,7 +66,7 @@ fi
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog HACKING NEWS README
+%doc AUTHORS ChangeLog MAINTAINERS NEWS README
 %{_libdir}/girepository-1.0/GDesktopEnums-3.0.typelib
 %{_datadir}/GConf/gsettings/gsettings-desktop-schemas.convert
 %{_datadir}/GConf/gsettings/wm-schemas.convert
