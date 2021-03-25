@@ -1,12 +1,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	3.38.0
+Version:	40.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.38/%{name}-%{version}.tar.xz
-# Source0-md5:	465a98f5ab8a5ca896009228257fc40d
+Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/40/%{name}-%{version}.tar.xz
+# Source0-md5:	345e5b2340f4c6fd1b90597745761ddf
 URL:		http://www.gnome.org/
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
