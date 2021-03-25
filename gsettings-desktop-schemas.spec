@@ -1,8 +1,10 @@
+%define		_enable_debug_packages	0
+
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
 Version:	40.0
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/40/%{name}-%{version}.tar.xz
