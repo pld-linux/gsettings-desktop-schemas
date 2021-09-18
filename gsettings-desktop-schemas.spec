@@ -3,19 +3,20 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	40.0
-Release:	2
+Version:	41.0
+Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/40/%{name}-%{version}.tar.xz
-# Source0-md5:	345e5b2340f4c6fd1b90597745761ddf
-URL:		http://www.gnome.org/
+Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/41/%{name}-%{version}.tar.xz
+# Source0-md5:	1d39684b07b33d06de7be230a126ca56
+URL:		https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
 BuildRequires:	gobject-introspection-devel >= 1.32.0
 BuildRequires:	meson >= 0.50.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
+BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
@@ -33,6 +34,7 @@ Zbiór schematów GSettings.
 Summary:	Development files for gsettings-desktop-schemas
 Summary(pl.UTF-8):	Pliki programistyczne dla gsettings-desktop-schemas
 Group:		Development/Libraries
+BuildArch:	noarch
 
 %description devel
 Development files for gsettings-desktop-schemas.
