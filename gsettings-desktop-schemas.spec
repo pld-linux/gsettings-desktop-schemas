@@ -3,12 +3,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	41.0
+Version:	42.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/41/%{name}-%{version}.tar.xz
-# Source0-md5:	1d39684b07b33d06de7be230a126ca56
+Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/42/%{name}-%{version}.tar.xz
+# Source0-md5:	6ba027e2b6bcfefd6d42cb7aa41bb040
 URL:		https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
@@ -76,6 +76,7 @@ fi
 %{_datadir}/GConf/gsettings/wm-schemas.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.interface.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml
