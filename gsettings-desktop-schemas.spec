@@ -3,17 +3,17 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	43.0
+Version:	44.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/43/%{name}-%{version}.tar.xz
-# Source0-md5:	38f3f153be78402cbd18e3d4b44ba0fa
+Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/44/%{name}-%{version}.tar.xz
+# Source0-md5:	bfb5047307ce2cc8718ee584fd4cb2bd
 URL:		https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
 BuildRequires:	gobject-introspection-devel >= 1.32.0
-BuildRequires:	meson >= 0.50.0
+BuildRequires:	meson >= 0.57.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	rpm-build >= 4.6
