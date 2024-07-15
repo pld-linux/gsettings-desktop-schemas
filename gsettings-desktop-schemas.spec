@@ -1,14 +1,12 @@
-%define		_enable_debug_packages	0
-
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	46.0
+Version:	46.1
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/46/%{name}-%{version}.tar.xz
-# Source0-md5:	b6363bdbf5a81ed42cb29a99dc88537f
+# Source0-md5:	f1fe79211639016c94df811e8ea6abe6
 URL:		https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
@@ -23,6 +21,8 @@ BuildRequires:	xz
 Requires(post,postun):	glib2 >= 1:2.32.0
 Requires:	glib2 >= 1:2.32.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_enable_debug_packages	0
 
 %description
 A collection of GSettings schemas.
