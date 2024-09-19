@@ -1,12 +1,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	46.1
+Version:	47.1
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/46/%{name}-%{version}.tar.xz
-# Source0-md5:	f1fe79211639016c94df811e8ea6abe6
+Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/47/%{name}-%{version}.tar.xz
+# Source0-md5:	cf4431e4d8ada7a6e73a46f80f553f06
 URL:		https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
@@ -82,6 +82,7 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.app-folders.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.break-reminders.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.calendar.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.datetime.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml
