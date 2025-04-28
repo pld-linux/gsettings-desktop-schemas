@@ -1,12 +1,12 @@
 Summary:	A collection of GSettings schemas
 Summary(pl.UTF-8):	Zbiór schematów GSettings
 Name:		gsettings-desktop-schemas
-Version:	47.1
+Version:	48.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/47/%{name}-%{version}.tar.xz
-# Source0-md5:	cf4431e4d8ada7a6e73a46f80f553f06
+Source0:	https://download.gnome.org/sources/gsettings-desktop-schemas/48/%{name}-%{version}.tar.xz
+# Source0-md5:	e5721d5c378cb5fb4817943357b96ea5
 URL:		https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.32.0
@@ -15,11 +15,13 @@ BuildRequires:	meson >= 0.57.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	rpm-build >= 4.6
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires(post,postun):	glib2 >= 1:2.32.0
 Requires:	glib2 >= 1:2.32.0
+# default fonts in provided settings
+Suggests:	fonts-TTF-Adwaita
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_enable_debug_packages	0
@@ -46,14 +48,14 @@ Pliki programistyczne dla gsettings-desktop-schemas.
 %setup -q
 
 %build
-%meson build
+%meson
 
-%ninja_build -C build
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%ninja_install -C build
+%meson_install
 
 %find_lang %{name}
 
@@ -94,6 +96,7 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.notifications.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.peripherals.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.privacy.gschema.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.desktop.screen-time-limits.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.screensaver.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.search-providers.gschema.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.desktop.session.gschema.xml
